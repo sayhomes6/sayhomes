@@ -1,7 +1,10 @@
 // ============ Page-load fade in ============
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-});
+const showPage = () => document.body.classList.add('loaded');
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', showPage);
+} else {
+    showPage();
+}
 
 // ============ Navbar + scroll-to-top (rAF-throttled for smoothness) ============
 const navbar = document.getElementById('navbar');
