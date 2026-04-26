@@ -1,0 +1,13 @@
+{
+  "name": "say-hotel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SAY Luxury Hotel - static website",
+  "scripts": {
+    "dev": "live-server --port=5173",
+    "start": "live-server --port=5173"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
